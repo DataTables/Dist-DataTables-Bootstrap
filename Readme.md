@@ -19,7 +19,7 @@ npm install datatables.net-bs
 
 ```
 var $ = require( 'jquery' );
-require( 'datatables.net-bs' )( $ );
+require( 'datatables.net-bs' )( window, $ );
 ```
 
 ### bower
