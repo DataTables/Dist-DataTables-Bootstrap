@@ -13,32 +13,22 @@
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD
-		define( ['jquery', 'datatables.net'], function ( $ ) {
-			return factory( $, window, document );
-		} );
+		define( ['jquery', 'datatables.net'], factory );
 	}
 	else if ( typeof exports === 'object' ) {
 		// CommonJS
-		module.exports = function (root, $) {
-			if ( ! root ) {
-				root = window;
-			}
+		module.exports = function ($) {
+			if ( ! $ ) { $ = require('jquery'); }
+			if ( ! $.fn.dataTable ) { require('datatables.net')($); }
 
-			if ( ! $ || ! $.fn.dataTable ) {
-				// Require DataTables, which attaches to jQuery, including
-				// jQuery if needed and have a $ property so we can access the
-				// jQuery object that is used
-				$ = require('datatables.net')(root, $).$;
-			}
-
-			return factory( $, root, root.document );
+			factory( $ );
 		};
 	}
 	else {
 		// Browser
-		factory( jQuery, window, document );
+		factory( jQuery );
 	}
-}(function( $, window, document, undefined ) {
+}(function( $ ) {
 'use strict';
 var DataTable = $.fn.dataTable;
 
@@ -67,7 +57,6 @@ DataTable.ext.renderer.pageButton.bootstrap = function ( settings, host, idx, bu
 	var api     = new DataTable.Api( settings );
 	var classes = settings.oClasses;
 	var lang    = settings.oLanguage.oPaginate;
-	var aria = settings.oLanguage.oAria.paginate || {};
 	var btnDisplay, btnClass, counter=0;
 
 	var attach = function( container, buttons ) {
@@ -136,7 +125,6 @@ DataTable.ext.renderer.pageButton.bootstrap = function ( settings, host, idx, bu
 						.append( $('<a>', {
 								'href': '#',
 								'aria-controls': settings.sTableId,
-								'aria-label': aria[ button ],
 								'data-dt-idx': counter,
 								'tabindex': settings.iTabIndex
 							} )
