@@ -56,9 +56,9 @@ $.extend( true, DataTable.defaults, {
 /* Default class modification */
 $.extend( DataTable.ext.classes, {
 	sWrapper:      "dataTables_wrapper form-inline dt-bootstrap",
-	sFilterInput:  "form-control input-sm",
-	sLengthSelect: "form-control input-sm",
-	sProcessing:   "dataTables_processing panel panel-default"
+	sFilterInput:  "form-control form-control-sm",
+	sLengthSelect: "form-control form-control-sm",
+	sProcessing:   "dataTables_processing card card-block"
 } );
 
 
