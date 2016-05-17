@@ -6,7 +6,8 @@
         "js/dataTables.bootstrap.js",
         "css/dataTables.bootstrap.css"
     ],
-    "main": "./js/dataTables.bootstrap.js",
+    "main": "js/dataTables.bootstrap.js",
+    "style": "css/dataTables.bootstrap.css",
     "keywords": [
         "filter",
         "sort",
