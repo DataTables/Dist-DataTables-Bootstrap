@@ -24,9 +24,12 @@
         "url": "http://datatables.net"
     },
     "dependencies": {
-        "jquery": ">=1.7",
-        "datatables.net": ">=1.10.9"
+        "jquery": ">=1.7"
+  
     },
+    "peerDependencies": {
+        "datatables.net": ">=1.10.9"
+  },
     "repository": {
         "type": "git",
         "url": "https://github.com/DataTables/Dist-DataTables-Bootstrap.git"
