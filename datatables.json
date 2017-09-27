@@ -8,6 +8,6 @@
         "js/dataTables.bootstrap.min.js"
     ],
     "src-repo": "http://github.com/DataTables/DataTablesSrc",
-    "last-sync": "f291e84ef424c6231ed1cbd8fc8be9f187bc67b8",
-    "last-tag": "1.10.15"
+    "last-sync": "2b7c6705489fb30aefc5d25612e3860b781120b7",
+    "last-tag": "1.10.16"
 }
