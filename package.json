@@ -27,6 +27,9 @@
         "jquery": ">=1.7",
         "datatables.net": "1.10.19"
     },
+    "peerDependencies": {
+        "datatables.net": ">=1.10.9"
+  },
     "repository": {
         "type": "git",
         "url": "https://github.com/DataTables/Dist-DataTables-Bootstrap.git"
