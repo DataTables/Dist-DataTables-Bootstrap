@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata>
-        <id>datatables.net-bs</id>
-        <version>1.10.24</version>
-        <description>Bootstrap integration for DataTables</description>
-        <authors>SpryMedia Ltd</authors>
-        <projectUrl>http://datatables.net</projectUrl>
-        <license type="expression">MIT</license>
-        <tags> DataTables jQuery table Bootstrap</tags>
-        <repository type="git" url="https://github.com/DataTables/Dist-DataTables-Bootstrap.git"/>
-        <dependencies>
-            <dependency id="jquery" version="1.7.0"/>
-            <dependency id="datatables.net" version="1.10.15"/>
-            <dependency id="bootstrap" version="3.*"/>
-        </dependencies>
-    </metadata>
-    <files>
-        <file src="js/datatables.bootstrap.js"/>
-        <file src="js/datatables.bootstrap.min.js"/>
-        <file src="css/datatables.bootstrap.css"/>
-        <file src="css/datatables.bootstrap.min.css"/>
-    </files>
+  <metadata>
+    <id>datatables.net-bs</id>
+    <version>1.10.24</version>
+    <description>Bootstrap integration for DataTables</description>
+    <authors>SpryMedia Ltd</authors>
+    <projectUrl>http://datatables.net</projectUrl>
+    <license type="expression">MIT</license>
+    <tags> DataTables jQuery table Bootstrap</tags>
+    <repository type="git" url="https://github.com/DataTables/Dist-DataTables-Bootstrap.git"/>
+    <dependencies>
+      <dependency id="jquery" version="1.7.0"/>
+      <dependency id="datatables.net" version="1.10.15"/>
+      <dependency id="bootstrap" version="3.*"/>
+    </dependencies>
+    <contentFiles>
+      <files include="**/*" buildAction="Content"/>
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="js/datatables.bootstrap.js" target="content\Scripts"/>
+    <file src="js/datatables.bootstrap.min.js" target="content\Scripts"/>
+    <file src="css/datatables.bootstrap.css" target="content\Content"/>
+    <file src="css/datatables.bootstrap.min.css" target="content\Content"/>
+    <file src="js/datatables.bootstrap.js" target="contentFiles\any\any\wwwroot\js"/>
+    <file src="js/datatables.bootstrap.min.js" target="contentFiles\any\any\wwwroot\js"/>
+    <file src="css/datatables.bootstrap.css" target="contentFiles\any\any\wwwroot\css"/>
+    <file src="css/datatables.bootstrap.min.css" target="contentFiles\any\any\wwwroot\css"/>
+  </files>
 </package>
