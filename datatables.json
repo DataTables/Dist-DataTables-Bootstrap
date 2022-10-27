@@ -10,7 +10,8 @@
         "css/dataTables.bootstrap.min.css"
     ],
     "types": [
-        "types/dataTables.bootstrap.d.ts"
+        "types/dataTables.bootstrap.d.ts",
+        "types/types.d.ts"
     ],
     "src-repo": "http://github.com/DataTables/DataTablesSrc",
     "last-tag": "1.12.1"
