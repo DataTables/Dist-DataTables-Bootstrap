@@ -5,7 +5,7 @@
     "module": "js/dataTables.bootstrap.mjs",
     "style": "css/dataTables.bootstrap.css",
     "types": "./types/dataTables.bootstrap.d.ts",
-    "version": "1.13.4",
+    "version": "1.13.5",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
