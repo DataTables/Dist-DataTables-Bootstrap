@@ -22,7 +22,7 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net": "1.13.8",
+        "datatables.net": "1.13.10",
         "jquery": ">=1.7"
     },
     "moduleType": [
