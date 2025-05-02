@@ -585,8 +585,24 @@ div.dt-scroll-foot > .dt-scroll-footInner > table {
     margin-bottom: 0.75rem;
   }
 }
-table.dataTable.table-condensed > thead > tr > th {
-  padding-right: 20px;
+table.dataTable.table-condensed > thead > tr th.dt-orderable-asc, table.dataTable.table-condensed > thead > tr th.dt-orderable-desc, table.dataTable.table-condensed > thead > tr th.dt-ordering-asc, table.dataTable.table-condensed > thead > tr th.dt-ordering-desc,
+table.dataTable.table-condensed > thead > tr td.dt-orderable-asc,
+table.dataTable.table-condensed > thead > tr td.dt-orderable-desc,
+table.dataTable.table-condensed > thead > tr td.dt-ordering-asc,
+table.dataTable.table-condensed > thead > tr td.dt-ordering-desc {
+  padding-right: 4px;
+}
+table.dataTable.table-condensed > thead > tr th.dt-orderable-asc span.dt-column-order, table.dataTable.table-condensed > thead > tr th.dt-orderable-desc span.dt-column-order, table.dataTable.table-condensed > thead > tr th.dt-ordering-asc span.dt-column-order, table.dataTable.table-condensed > thead > tr th.dt-ordering-desc span.dt-column-order,
+table.dataTable.table-condensed > thead > tr td.dt-orderable-asc span.dt-column-order,
+table.dataTable.table-condensed > thead > tr td.dt-orderable-desc span.dt-column-order,
+table.dataTable.table-condensed > thead > tr td.dt-ordering-asc span.dt-column-order,
+table.dataTable.table-condensed > thead > tr td.dt-ordering-desc span.dt-column-order {
+  right: 4px;
+}
+table.dataTable.table-condensed > thead > tr th.dt-type-date span.dt-column-order, table.dataTable.table-condensed > thead > tr th.dt-type-numeric span.dt-column-order,
+table.dataTable.table-condensed > thead > tr td.dt-type-date span.dt-column-order,
+table.dataTable.table-condensed > thead > tr td.dt-type-numeric span.dt-column-order {
+  right: 4px;
 }
 
 div.dt-scroll-head table.table-bordered {
