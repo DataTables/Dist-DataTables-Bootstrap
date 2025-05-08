@@ -602,7 +602,7 @@ table.dataTable.table-condensed > thead > tr td.dt-ordering-desc span.dt-column-
 table.dataTable.table-condensed > thead > tr th.dt-type-date span.dt-column-order, table.dataTable.table-condensed > thead > tr th.dt-type-numeric span.dt-column-order,
 table.dataTable.table-condensed > thead > tr td.dt-type-date span.dt-column-order,
 table.dataTable.table-condensed > thead > tr td.dt-type-numeric span.dt-column-order {
-  right: 4px;
+  left: 4px;
 }
 
 div.dt-scroll-head table.table-bordered {
