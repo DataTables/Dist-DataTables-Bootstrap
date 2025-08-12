@@ -10,7 +10,7 @@
         <license type="expression">MIT</license>
         <tags>Bootstrap  Datatables jQuery table</tags>
         <dependencies>
-            <dependency id="datatables.net" version="1.12.1"/>
+            <dependency id="datatables.net" version="2.3.2"/>
             <dependency id="bootstrap" version="3.*"/>
         </dependencies>
         <contentFiles>
@@ -22,6 +22,10 @@
         <file src="js/dataTables.bootstrap.js" target="contentFiles\any\any\wwwroot\js"/>
         <file src="js/dataTables.bootstrap.min.js" target="content\Scripts"/>
         <file src="js/dataTables.bootstrap.min.js" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="js/dataTables.bootstrap.min.mjs" target="content\Scripts"/>
+        <file src="js/dataTables.bootstrap.min.mjs" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="js/dataTables.bootstrap.mjs" target="content\Scripts"/>
+        <file src="js/dataTables.bootstrap.mjs" target="contentFiles\any\any\wwwroot\js"/>
         <file src="css/dataTables.bootstrap.css" target="content\Content"/>
         <file src="css/dataTables.bootstrap.css" target="contentFiles\any\any\wwwroot\css"/>
         <file src="css/dataTables.bootstrap.min.css" target="content\Content"/>
