@@ -1,6 +1,6 @@
 {
     "name": "datatables.net/datatables.net-bs",
-    "description": "DataTables with styling for [Bootstrap](https://getbootstrap.com/docs/3.3/)",
+    "description": "DataTables with styling for Bootstrap",
     "support": {
         "forum": "https://datatables.net/forums",
         "source": "https://github.com/DataTables/Dist-DataTables-Bootstrap"
