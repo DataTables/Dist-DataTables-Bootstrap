@@ -5,7 +5,7 @@
     "module": "./js/dataTables.bootstrap.mjs",
     "style": "./css/dataTables.bootstrap.css",
     "types": "./types/dataTables.bootstrap.d.ts",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "files": [
         "js",
         "css",
@@ -19,7 +19,7 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net": "3.1.0"
+        "datatables.net": "3.1.1"
     },
     "author": {
         "name": "SpryMedia Ltd",
